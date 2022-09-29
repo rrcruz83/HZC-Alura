@@ -15,9 +15,20 @@
 </head>
 <body>
     <header class="cabecalho"> <!--Flex Container-->
-        <button class="cabecalho__menu">menu</button> <!--No CSS o justify-content e align-items apenas movimentam as tags filhas diretas do flex container.-->
-        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo">
-        <button class="cabecalho__notificacao">notificação</button>
+        <button class="cabecalho_menu" aria-label="Menu"><i></i></button> <!--No CSS o justify-content e align-items apenas movimentam as tags filhas diretas do flex container.-->
+        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho_logo">
+        <button class="cabecalho_notificacao" aria-label="Notificação"><i></i></button>
     </header>
+    <nav class="menu-lateral menu-lateral-ativo"> <!--Emet = nav.menu-lateral>img.menu-lateral_logo+a[href="#"].menu-lateral_link*6-->
+        <img src="assets/img/logo.svg" alt="" class="menu-lateral_logo">
+        <a href="#" class="menu-lateral_link menu-lateral_link_inicio menu-lateral_link-ativo">Ínicio</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link_videos">Vídeos</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link_picos">Picos</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link_integrantes">Integrantes</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link_camisas">Camisas</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link_pinturas">Pinturas</a>
+
+        <script src="index.js"></script><!--Inclusão do javascript-->
+    </nav>
 </body>
 </html>
