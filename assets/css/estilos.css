@@ -100,3 +100,85 @@ body {
 .menu-lateral_link_pinturas::before {
     content: "\e90a";
 }
+
+.principal {
+    padding: 24px;
+}
+
+.titulo_pagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cartao {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+}
+
+.cartao_conteudo {
+    padding: 16px;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*FR = Fração*/
+}
+
+.cartao_destaque {
+    grid-column: span 2;
+}
+
+.cartao_titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao_perfil {
+    color: #95999C;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao_info {
+    display: flex;
+    align-items: center;
+    color: #95999C;
+}
+
+
+.cartao_info_tempo::before {
+    content: "\e90c";
+    margin-right: 8px;
+}
+
+.cartao_info_visualizacao::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.cartao_botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480DC;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    
+}
+
+.cartao_botao_play::before {
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao_botao_destaque {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.cartao_botao_destaque::before {
+    margin-right: 8px;
+}
