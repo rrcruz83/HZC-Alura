@@ -103,6 +103,8 @@ body {
 
 .principal {
     padding: 24px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo_pagina {
@@ -117,11 +119,16 @@ body {
     background-color: #2C343A;
 }
 
+.cartao-destaque {
+    margin-bottom: 16px;
+}
+
 .cartao_conteudo {
+    gap: 8px /*Cria espaçamento entre os elementos do grid (existe tb row-gap e column-gap)*/;
     padding: 16px;
     font-weight: 700;
     display: grid;
-    grid-template-columns: 1fr 1fr; /*FR = Fração*/
+    grid-template-columns: auto 1fr; /*FR = Fração (O valor auto permite que elas se adaptem de acordo com o conteúdo.)*/
 }
 
 .cartao_destaque {
@@ -166,12 +173,14 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
     
 }
 
 .cartao_botao_play::before {
     content: "\e90b";
     font-size: 24px;
+
 }
 
 .cartao_botao_destaque {
@@ -181,4 +190,15 @@ body {
 
 .cartao_botao_destaque::before {
     margin-right: 8px;
+}
+
+.secao {
+    display: grid;
+    gap: 16px;
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
