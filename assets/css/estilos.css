@@ -159,6 +159,11 @@ body {
     margin-right: 8px;
 }
 
+.cartao_info_moeda::before {
+    content: "\e905";
+    margin-right: 8px;
+}
+
 .cartao_info_visualizacao::before {
     content: "\e90f";
     margin-right: 8px;
@@ -179,6 +184,12 @@ body {
 
 .cartao_botao_play::before {
     content: "\e90b";
+    font-size: 24px;
+
+}
+
+.cartao_botao_buy::before {
+    content: "\e901";
     font-size: 24px;
 
 }
