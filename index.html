@@ -28,13 +28,12 @@
         <a href="#" class="menu-lateral_link menu-lateral_link_integrantes">Integrantes</a>
         <a href="#" class="menu-lateral_link menu-lateral_link_camisas">Camisas</a>
         <a href="#" class="menu-lateral_link menu-lateral_link_pinturas">Pinturas</a>
-
-        <script src="index.js"></script><!--Inclusão do javascript-->
     </nav>
     <main class="principal">
         <h2 class="titulo_pagina">Início</h2>
-        <article class="cartao cartao-destaque">
-            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao_imagem">
+        <article class="cartao cartao-destaque destaque-video">
+            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao_imagem cartao_imagem_videos_mobile">
+            <img src="assets/img/banner_1.png" alt="Banner do cartão" class="cartao_imagem cartao_imagem_videos_desktop">
             <div class="cartao_conteudo">
                 <p class="cartao_destaque">Vídeo em destaque</p>
                 <h3 class="cartao_titulo">HZC - Life is.../2021</h3>
@@ -44,7 +43,7 @@
                 <button class="cartao_botao cartao_botao_play cartao_botao_destaque">Assistir agora</button>
             </div>
         </article>
-        <article class="cartao cartao_recentes">
+        <article class="cartao cartao_recentes videos-recentes">
             <h3 class="cartao_titulo">Vídeos recentes</h3>
             <a href="#" class="cartao_link">Ver todos</a>
             <ul class="cartao_lista">
@@ -75,8 +74,7 @@
                 </li>
             </ul>
         </article>
-
-        <section class="secao">
+        <section class="secao secao-videos">
             <h3 class="titulo-secao">Vídeos mais vistos</h3>
             <article class="cartao cartao-destaque">
                 <img src="assets/img/video_1.png" alt="Video 1" class="cartao_imagem">
@@ -114,10 +112,10 @@
                     <button class="cartao_botao cartao_botao_play" aria-label="Assistir agora"></button>
                 </div>
             </article>
-
-            <article class="cartao cartao_recentes">
+            </section>
+            <article class="cartao cartao_recentes produtos-recentes">
                 <h3 class="cartao_titulo">Vídeos recentes</h3>
-                <a href="#" class="cartap_link">Ver todos</a>
+                <a href="#" class="cartao_link">Ver todos</a>
                 <ul class="cartao_lista">
                     <li class="cartao_item">
                         <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item_thumbnail">
@@ -146,9 +144,9 @@
                     </li>
                 </ul>
             </article>
-
-            <article class="cartao cartao-destaque">
-                <img src="assets/img/banner-mobile_2.png" alt="Banner do cartão" class="cartao_imagem">
+            <article class="cartao cartao-destaque destaque-produtos">
+                <img src="assets/img/banner-mobile_2.png" alt="Banner do cartão" class="cartao_imagem cartao_imagem_produtos_mobile">
+                <img src="assets/img/banner_2.png" alt="Banner do cartão" class="cartao_imagem cartao_imagem_produtos_desktop">
                 <div class="cartao_conteudo">
                     <p class="cartao_destaque">Nova arte</p>
                     <h3 class="cartao_titulo">Only Zikas - Lagoa Dompa Club</h3>
@@ -158,7 +156,7 @@
                     <button class="cartao_botao cartao_botao_buy cartao_botao_destaque">Comprar agora</button>
                 </div>
             </article>
-            <section class="secao">
+            <section class="secao secao-produtos">
                 <h3 class="titulo-secao">Camisas mais recentes</h3>
                 <article class="cartao cartao-destaque">
                     <img src="assets/img/produto_1.png" alt="Video 1" class="cartao_imagem">
@@ -198,5 +196,6 @@
                 </article>
         </section>
     </main>
+    <script src="index.js"></script><!--Inclusão do javascript-->
 </body>
 </html>
